@@ -13,7 +13,7 @@ def saveVideo(videoLink):
 
 def saveFrame(videoName,stillName):
     cap = cv2.VideoCapture(videoName)
-    cap.set(1,180)# take the 180th frame
+    cap.set(1,180);# take the 180th frame
     ret, frame = cap.read()
     cv2.imwrite(stillName,frame)
 
